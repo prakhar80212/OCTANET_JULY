@@ -8,7 +8,7 @@ HTML CODE
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANARAS WEB PAGE</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="landingpage.css">
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
@@ -118,26 +118,24 @@ nav{
    transform: translate(-50%,-50%);
     position: absolute;
     color: #e6dddd;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    infinite 2s
+    typing  2s steps(4);
+    cursor : .4 step-end infinite ;
 }
 
-/* span::before{
-    content: '';
-    animation: animate infinite 8s;
-    
-}
-@keyframes animate {
-    10%{
-        content: 'वाराणसी';
-    }
-    20%{
-        content: 'ई-बनारस है गुरु, यहां जीने से ज्यादा ';
-    }
-    30%{
-        content:'सुबह के सुकून में और शाम के नजारों पे दिल ठहरता है ऐ बनारस तेरी हर अदा से इश्क़ है हमें।';
-    }
+@keyframes cursor {
+    50% { border-color: transparent}
     
     
-} */
+} 
+@keyframes typing {
+    from { width: 0;}
+    
+    
+} 
 .head-txt h1{
     max-width: 1000px;
     font-size: 900%;
